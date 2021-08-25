@@ -6,3 +6,6 @@
     margin-top: 50px;
     width: 70%;
 }
+html, body{
+    overflow-x: hidden;
+}
