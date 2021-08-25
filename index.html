@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <form class="row g-3" id="coordsForm">
+        <div class="col-auto">
+            <label for="latitude" class="visually-hidden">Latitude</label>
+            <input type="text" class="form-control" id="latitude" placeholder="Latitude">
+          </div>
+        <div class="col-auto">
+          <label for="longitude" class="visually-hidden">Longitude</label>
+          <input type="text" class="form-control" id="longitude" placeholder="Longitude">
+        </div>
+        <div class="col-auto">
+          <label for="address" class="visually-hidden">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="Address">
+        </div>
+        <div class="col-auto">
+          <label for="difficulty" class="visually-hidden">Difficulty</label>
+          <input type="text" class="form-control" id="difficulty" placeholder="Difficulty">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Add to Database</button>
+        </div>
+      </form>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Latitude</th>
+            <th scope="col">Longitude</th>
+            <th scope="col">Address</th>
+            <th scope="col">Difficulty</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+      </table>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
